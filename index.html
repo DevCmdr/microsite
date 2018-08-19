@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <title>Microsite - Stefan D. | Danke</title>
+
+    <style>
+        body {
+            font-family: 'Bad Script', cursive;
+            margin: 0 auto;
+            padding: 0;
+            background-image: url("images/lonely_road-curves_ahead_edited.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        header p {
+            color: orange;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            letter-spacing: 0.8pt;
+            border-radius: 40px;
+            padding: 10px;
+            margin: 40px;
+            width: 280px;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        header img {
+            height: 160px;
+            border-radius: 40px;
+        }
+
+        header img:hover {
+            transition: all 0.6s;
+            transform: scale(0.90);
+        }
+        
+        .button1 {
+            font-family: 'Bad Script', cursive;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            border: 2px dashed orange;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            letter-spacing: 1pt;
+            -webkit-transition-duration: 0.6s;
+            /* Safari */
+            transition-duration: 0.6s;
+            cursor: pointer;
+            margin: 6px;
+        }
+
+        .button1:hover {
+            background-color: orange;
+            color: white;
+        }
+        
+        main section div {
+            visibility: hidden;
+            color: orange;
+            text-align: center;
+            letter-spacing: 1pt;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url("images/thx_rose_small_edited.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 10px;
+            margin: 40px;
+            width: 460px;
+            height: 220px;
+            border: 2px dashed orange;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        main section div strong {
+            font-size: 40pt;
+        }
+
+        main section div {
+            font-size: 18pt;
+        }
+
+        footer {
+            left: 40px;
+            bottom: 20px;
+        }
+
+        footer div p {
+            margin: 0;
+            text-align: center;
+            letter-spacing: 1pt;
+            color: orange;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 40px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        footer img {
+            height: 36px;
+            vertical-align: middle;
+            border-radius: 60px;
+        }
+
+        footer img:hover {
+            opacity: 0.7;
+            transition: all 0.5s;
+            -webkit-transition-duration: 0.5s;
+            /* Safari */
+            transform: scale(0.95);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <center>
+
+        <script>
+            function show_msg() {
+                var a = document.querySelector('div');
+                if (a.style.visibility != 'visible') {
+                    a.style.visibility = 'visible';
+                } else {
+                    a.style.visibility = 'hidden';
+                }
+            }
+        </script>
+
+        <header>
+            <p><strong>Stefan D.</strong><br>
+                <img src="images/stefan_klein_kopf_1.jpg" alt="Mein Bild"><br> sendet folgende<br>
+                <button class="button1" onclick="show_msg()" title="Zum Ansehen, bitte klicken!">Nachricht</button>
+            </p>
+        </header>
+
+        <main>
+            <section>
+                <div id="Danke" title="eCard mit Text">
+                    <strong>Danke</strong><br>
+                    <b>für die Gelegenheit am Orientierungskurs<br>
+              teilnehmen zu k&ouml;nnen.</b>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <p>erstellt bei
+                    <a href="https://digitalcareerinstitute.org" title="Link zur Website" target="_blank">
+        <img src="images/devugees.png" alt="DCI Logo"></a> in 2018</p>
+            </div>
+        </footer>
+
+    </center>
+</body>
+
+</html>
